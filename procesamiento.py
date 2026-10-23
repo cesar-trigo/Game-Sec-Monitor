@@ -1,4 +1,4 @@
-
+from carga import cargar_telemetria 
 
 total = [
     {'id_sesion': '1', 'servidor': 'SA-BuenosAires', 'jugador_id': 'User_125', 'tipo_partida': 'Competitiva', 'ping_promedio': '49', 'fps_promedio': '75', 'duracion_minutos': '12.0', 'intentos_fallidos': '0', 'reportes_trampa': '1'}, {'id_sesion': '2', 'servidor': 'EU-Frankfurt', 'jugador_id': 'User_132', 'tipo_partida': 'Casual', 'ping_promedio': '185', 'fps_promedio': '75', 'duracion_minutos': '29.0', 'intentos_fallidos': '0', 'reportes_trampa': '1'}, {'id_sesion': '3', 'servidor': 'EU-Frankfurt', 'jugador_id': 'User_325', 'tipo_partida': 'Casual', 'ping_promedio': '201', 'fps_promedio': '30', 'duracion_minutos': '40.8', 'intentos_fallidos': '1', 'reportes_trampa': '0'}
@@ -64,4 +64,6 @@ def calcular_estadisticas_globales(sesiones: list[dict]) -> dict:
 calcular_estadisticas_globales(total)
 
 def clasificar_incidentes(sesiones: list[dict]) -> tuple[dict, list[dict]]:
+    
+    
     pass
